@@ -1,0 +1,4 @@
+#!/bin/bash
+#Vaciado de swap
+
+swapoff -a && swapon -a

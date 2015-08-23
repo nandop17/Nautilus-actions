@@ -1,0 +1,30 @@
+#!/bin/bash
+## Busca y remplaza cadenas de texto dentro de los archivos seleccionados con nautilus
+
+cadena1=""
+cadena2=""
+
+## Coge las cadenas
+cadena1=$(zenity --entry --title="Buscar-remplazar" --text="Buscar: " --width=300)
+if [ "$?" != 0 ] ; then
+	zenity --error --title="Buscar-remplazar" --text="Operación cancelada"
+	exit
+fi
+cadena2=$(zenity --entry --title="Buscar-remplazar" --text="Y remplazar por: " --width=300)
+if [ "$?" != 0 ] ; then
+	zenity --error --title="Buscar-remplazar" --text="Operación cancelada"
+	exit
+fi
+
+## Bucle para la sustitución
+b=$#
+
+for(( a=1; a <= b; a++ ))
+do
+
+file="$1"
+sed -i 's/'"$cadena1"'/'"$cadena2"'/g' "$file"
+
+shift 1
+done
+

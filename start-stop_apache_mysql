@@ -1,0 +1,18 @@
+#!/bin/bash
+#Encendido-apagado del servidor local apache2 y mysql
+
+apacheStatus=$(service apache2 status | grep not)
+if [ ! "$apacheStatus" = "" ];then
+	service apache2 start
+	service mysql start
+else
+	zenity --question --title="Start/Stop apache" --text="Apache está encendido, ¿Desea apagar apache y mysql?"
+	if [ "$?" == 0 ] ; then
+		service apache2 stop
+		service mysql stop
+	else
+		zenity --info --text="El apagado de apache2 y mysql ha tenido un error"
+	fi
+
+fi
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+#con este script 
+
+
+
+ip=$(ifconfig | sed -n '/192.168/p' | sed -n '1 p')
+ip=$(echo ${ip% Bcast*})	#en ingles Bcast, en español Difus
+ip=$(echo ${ip#*:})
+echo -e "La ip es :\n$ip\n"
+zenity --info --text="Su dirección ip es :\n\n$ip"
+#read -p "Pulse Enter para cerrar..." tecla

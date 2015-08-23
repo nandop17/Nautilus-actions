@@ -1,0 +1,30 @@
+#!/bin/bash
+## Busca y remplaza cadenas de texto en los TITULOS de los archivos seleccionados con nautilus
+
+cadena1=""
+cadena2=""
+
+## Coge las cadenas
+cadena1=$(zenity --entry --title="Buscar-remplazar (TITULOS)" --text="Buscar: " --width=300)
+if [ "$?" != 0 ] ; then
+	zenity --error --title="Buscar-remplazar (TITULOS)" --text="Operación cancelada"
+	exit
+fi
+cadena2=$(zenity --entry --title="Buscar-remplazar (TITULOS)" --text="Y remplazar por: " --width=300)
+if [ "$?" != 0 ] ; then
+	zenity --error --title="Buscar-remplazar (TITULOS)" --text="Operación cancelada"
+	exit
+fi
+
+## Bucle para la sustitución
+b=$#
+
+for(( a=1; a <= b; a++ ))
+do
+name_file="${1}"
+name_file2=$(echo "${name_file}" | sed 's/'"$cadena1"'/'"$cadena2"'/g' )
+mv "${name_file}" "${name_file2}"
+
+shift 1
+done
+

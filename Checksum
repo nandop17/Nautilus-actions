@@ -1,0 +1,9 @@
+#!/bin/bash
+#con este script se puede ver la suma de comprobacion en archivos iso.
+
+
+md5=$(md5sum "$1")
+sha1=$(sha1sum "$1")
+sha256=$(sha256sum "$1")
+zenity --info --title="Suma de comprobación" --text="MD5sum :\n\n$md5\n\nSHA1sum:\n\n$sha1\n\nSHA256sum:\n\n$sha256"
+
