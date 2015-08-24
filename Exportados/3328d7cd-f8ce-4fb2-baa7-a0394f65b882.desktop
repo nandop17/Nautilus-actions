@@ -1,0 +1,17 @@
+[Desktop Entry]
+Type=Action
+Name[en]=Execute
+Name[C]=Execute
+Icon[en]=gtk-media-play-ltr
+Icon[C]=gtk-media-play-ltr
+TargetToolbar=true
+ToolbarLabel[en]=Execute
+ToolbarLabel[C]=Execute
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Name[en]=Default profile
+Name[C]=Default profile
+Exec=%f 
+SelectionCount==1
+Capabilities=Executable;

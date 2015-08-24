@@ -1,0 +1,18 @@
+[Desktop Entry]
+Type=Action
+Name[en]=Ver IP
+Name[C]=Ver IP
+Icon[en]=gnome-dev-ethernet
+Icon[C]=gnome-dev-ethernet
+TargetContext=false
+TargetLocation=true
+TargetToolbar=true
+ToolbarLabel[en]=Ver IP
+ToolbarLabel[C]=Ver IP
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Name[en]=Default profile
+Name[C]=Default profile
+Exec=/home/nando/Scripts/Nautilus-actions/VerIP 
+ExecutionMode=Embedded

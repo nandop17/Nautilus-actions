@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Action
+Name[en]=Buscar y remplazar en nombres
+Name[C]=Buscar y remplazar en nombres
+Icon[en]=edit-find-replace
+Icon[C]=edit-find-replace
+ToolbarLabel[en]=Buscar y remplazar en nombres
+ToolbarLabel[C]=Buscar y remplazar en nombres
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Name[en]=Default profile
+Name[C]=Default profile
+Exec=/home/nando/Scripts/Nautilus-actions/Buscar-remplazar_nombres %f
+ExecutionMode=Embedded

@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Action
+Name[en]=Checksum
+Name[C]=Checksum
+Icon[en]=add
+Icon[C]=add
+ToolbarLabel[en]=Checksum
+ToolbarLabel[C]=Checksum
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Name[en]=Default profile
+Name[C]=Default profile
+Exec=/home/nando/Scripts/Nautilus-actions/Checksum %f
+ExecutionMode=Embedded
+Basenames=*.iso;

@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Action
+Name[en]=Buscar y remplazar
+Name[C]=Buscar y remplazar
+Icon[en]=edit-find-replace
+Icon[C]=edit-find-replace
+ToolbarLabel[en]=Buscar y remplazar
+ToolbarLabel[C]=Buscar y remplazar
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Name[en]=Default profile
+Name[C]=Default profile
+Exec=/home/nando/Scripts/Nautilus-actions/Buscar-remplazar %f
+ExecutionMode=Embedded
+MimeTypes=text/*;

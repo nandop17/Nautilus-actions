@@ -1,0 +1,19 @@
+[Desktop Entry]
+Type=Action
+Name[en]=Open Terminal Here
+Name[C]=Open Terminal Here
+Tooltip[en]=Open Terminal Here
+Tooltip[C]=Open Terminal Here
+Icon[en]=bash
+Icon[C]=bash
+TargetContext=false
+TargetLocation=true
+ToolbarLabel[en]=Open Terminal Here
+ToolbarLabel[C]=Open Terminal Here
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Name[en]=Default profile
+Name[C]=Default profile
+Exec=gnome-terminal --working-directory=%f
+SelectionCount==1

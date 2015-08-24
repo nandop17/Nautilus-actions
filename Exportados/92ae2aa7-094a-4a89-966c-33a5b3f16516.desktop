@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Action
+Name[en]=Permisator
+Name[C]=Permisator
+Icon[en]=package-available-locked
+Icon[C]=package-available-locked
+ToolbarLabel[en]=Permisator
+ToolbarLabel[C]=Permisator
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Name[en]=Default profile
+Name[C]=Default profile
+Exec=/home/nando/Scripts/Nautilus-actions/permisator.sh %f
+ExecutionMode=Embedded

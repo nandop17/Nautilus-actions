@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Action
+Name[en]=Agregar a Audacious
+Name[C]=Agregar a Audacious
+Icon[en]=audacious
+Icon[C]=audacious
+ToolbarLabel[en]=Agregar a Audacious
+ToolbarLabel[C]=Agregar a Audacious
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Name[en]=Default profile
+Name[C]=Default profile
+Exec=audacious -e %f
+Basenames=*.mp3;

@@ -1,0 +1,17 @@
+[Desktop Entry]
+Type=Action
+Name[en]=Run/Stop Apache2 and mySQL
+Name[C]=Run/Stop Apache2 and mySQL
+Icon[en]=application-exit
+Icon[C]=application-exit
+TargetContext=false
+TargetLocation=true
+ToolbarLabel[en]=Run/Stop Apache2 and mySQL
+ToolbarLabel[C]=Run/Stop Apache2 and mySQL
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Name[en]=Default profile
+Name[C]=Default profile
+Exec=gksudo '/home/nando/Scripts/Nautilus-actions/start-stop_apache_mysql'
+ExecutionMode=DisplayOutput

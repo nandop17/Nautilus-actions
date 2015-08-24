@@ -1,0 +1,17 @@
+[Desktop Entry]
+Type=Action
+Name[en]=Empty Swap
+Name[C]=Empty Swap
+Icon[en]=xfsm-reboot
+Icon[C]=xfsm-reboot
+TargetContext=false
+TargetLocation=true
+ToolbarLabel[en]=Empty Swap
+ToolbarLabel[C]=Empty Swap
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Name[en]=Default profile
+Name[C]=Default profile
+Exec=gksudo '/home/nando/Scripts/Nautilus-actions/emptySwap'
+ExecutionMode=Embedded

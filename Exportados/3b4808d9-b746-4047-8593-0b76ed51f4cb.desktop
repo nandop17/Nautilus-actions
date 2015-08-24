@@ -1,0 +1,19 @@
+[Desktop Entry]
+Type=Action
+Name[en]=Open folder as root
+Name[C]=Open folder as root
+Tooltip[en]=Open folder as root
+Tooltip[C]=Open folder as root
+Icon[en]=accessibility-directory
+Icon[C]=accessibility-directory
+TargetContext=false
+TargetLocation=true
+ToolbarLabel[en]=Open folder as root
+ToolbarLabel[C]=Open folder as root
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Name[en]=Default profile
+Name[C]=Default profile
+Exec=gksudo  'nautilus %f'
+SelectionCount==1
