@@ -30,6 +30,6 @@ if [ ! -z "$1" ] ; then
 	fi
 
 else
-	zenity --title="Permisator" --error --text="Introduce algun carpeta o fichero"
+	zenity --title="Permisator" --error --text="Introduce alguna carpeta o fichero"
 fi
 

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Action
+Icon[en]=archive-extract
+Icon[C]=archive-extract
+ToolbarLabel[en]=Descomprimir como root
+ToolbarLabel[C]=Descomprimir como root
+Name[en]=Descomprimir como root
+Name[C]=Descomprimir como root
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Basenames=*.rar;*.xz;*.7z;*.gz;*.iso;*.jar;*.tar;*.zip;*.tar.gz;
+Exec=gksudo  'file-roller %f'
+Name[en]=Default profile
+Name[C]=Default profile
