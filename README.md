@@ -17,14 +17,15 @@ Los requisitos son:
 - La librería GTK+ Zenity (instalada por defecto en UBUNTU):
   
   $ sudo apt-get install zenity
+
 - Para aprovechar todos los scripts con nautilus necesitamos nautilus(instalado por defecto en UBUNTU):
   
   $ sudo apt-get install nautilus
   
-  $ sudo apt-get install nautilus-actions
 - Y el programa de configuración de nautilus-actions para ejecutar los scripts en el menu contextual:
   
-  $ sudo apt-get install nautilus-actions-config-tool
+  $ sudo apt-get install nautilus-actions
+  
 
 
 INSTALACION
@@ -46,8 +47,10 @@ Dar permisos de ejecución a todos los scripts de la carpeta (<i>NOTA: cambia la
 
 <b>Step 3:</b>
 Abrir nautilus-actions-config-tool
-e importar todos los ficheros tipo desktop de la carpeta Exportados del proyecto.
+y en el menú en la pestaña herramientas --> Asistenete de importación y a continuación se importa todos los ficheros tipo desktop de la carpeta "Exportados" del proyecto.
 
+<b>Step 4:</b>
+Reinicia la sesión de usuario.
 
 
 USO
