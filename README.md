@@ -18,6 +18,10 @@ Los requisitos son:
   
   $ sudo apt-get install zenity
 
+- Para los scripts que se necesitan permisos de superusuario root es necesario instalar la autentificación gksudo:
+
+  $ sudo apt-get install gksu
+
 - Para aprovechar todos los scripts con nautilus necesitamos nautilus(instalado por defecto en UBUNTU):
   
   $ sudo apt-get install nautilus
